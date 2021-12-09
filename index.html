@@ -26,31 +26,31 @@
         let giatri1 = document.getElementById('so1').value;
         let giatri2 = document.getElementById('so2').value;
         let tong;
-        tong = parseFloat(giatri1) + parseFloat(giatri2);
-        document.getElementById('kq').innerText = 'Result Division :' + tong;
+        tong = Math.round((parseFloat(giatri1) + parseFloat(giatri2)) * 100)/100 ;
+        document.getElementById('kq').innerText = 'Result Division :' + tong ;
     }
 
     function tru(){
         let giatri1 = document.getElementById('so1').value;
         let giatri2 = document.getElementById('so2').value;
         let tru;
-        tru = parseFloat(giatri1) - parseFloat(giatri2);
-        document.getElementById('kq').innerText = 'Result Division :' + tru;
+        tru = Math.round((parseFloat(giatri1) - parseFloat(giatri2)) * 100)/100 ;
+        document.getElementById('kq').innerText ='Result Division :' + tru;
     }
 
     function nhan(){
         let giatri1 = document.getElementById('so1').value;
         let giatri2 = document.getElementById('so2').value;
         let nhan;
-        nhan = parseFloat(giatri1) * parseFloat(giatri2);
-        document.getElementById('kq').innerText = 'Result Division :' + nhan;
+        nhan = Math.round((parseFloat(giatri1) * parseFloat(giatri2))  * 100)/100 ;
+        document.getElementById('kq').innerText ='Result Division :' + nhan;
     }
 
     function chia(){
         let giatri1 = document.getElementById('so1').value;
         let giatri2 = document.getElementById('so2').value;
         let chia;
-        chia = parseFloat(giatri1) / parseFloat(giatri2);
+        chia = Math.round((parseFloat(giatri1) / parseFloat(giatri2)) * 100)/100 ;
         document.getElementById('kq').innerText = 'Result Division :' + chia;
     }
 
